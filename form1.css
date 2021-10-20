@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+.container{
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    padding: 30px 30px;
+    border-radius: 10px;
+    background: rgba( 55, 226, 244, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );  
+}
+.container .tittle{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+body{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+table{
+    width: 80%;
+    margin: 40px auto;
+    background: rgba( 172, 223, 229, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+table.list{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    border: 1px solid rgb(204,200,200);
+    text-align: left;
+    padding: 8px 15px;
+}
+
+tr:nth-child(even),table.list thead{
+    background-color: rgb(204,200,200);
+}
+
+input[type="text"]{
+    width:90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165,161, 161);
+    border-radius: 4px ;
+}
+
+input[type="submit"],input[type="reset"]{
+    background:#eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px ;
+    font-size: 1rem;
+    cursor:pointer;
+    outline:none;
+}
+
+input[type="submit"]:hover, input[type="re"]{
+    background: #4b99d8;
+}
+
+@media (max-width:720px){
+    td{
+        display: flex;
+        flex-direction: column;
+    }
+    table.list{
+        display: flex;
+        flex-direction: column;
+    }
+    tbody{
+        display: flex;
+        flex-direction: row;
+    }
+}

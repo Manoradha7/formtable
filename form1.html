@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Form</title>
+    <link rel="stylesheet" href="form1.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <div class="container">
+                    <form action="Register" method="post">
+                        <div class="tittle">Registration</div>
+                        <div class="user-details">
+                            <label for="fname">
+                                <span class="details"> First Name :</span>
+                                <input type="text" id="fname" placeholder="First Name" required>
+                            </label>
+                        </div>
+                        <div class="user-details">
+                            <label for="lname">
+                                <span class="details"> Last Name :</span>
+                                <input type="text" id="lname" placeholder="Last Name" required>
+                            </label>
+                        </div>
+                        <div class="user-details">
+                            <label for="Address">
+                                <span class="details">Address :</span>
+                                <input type="text" id="Address" placeholder="Address" required>
+                            </label>
+                        </div>
+                        <div class="user-details">
+                            <label for="state">
+                                <span class="details">State :</span>
+                                <input type="text" id="state" placeholder="state" required>
+                            </label>
+                        </div>
+                        <div class="user-details">
+                            <label for="Country">
+                                <span class="details"> Country :</span>
+                                <input type="text" id="Country" placeholder="Country" required>
+                            </label>
+                        </div>
+                        <div class="user-details">
+                            <label for="pcode">
+                                <span class="details"> Pincode :</span>
+                                <input type="text" onkeypress="return onlyNumber(val)" id="pcode" maxlength="6" placeholder="pincode" required>
+                            </label>
+                        </div>
+                       <div class="gender-details">
+                        <label for="gender">
+                        <span>Gender :</span><br>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Transgender">Transgender</option>
+                        </select>
+                        </label>
+                       </div>
+                       <div class="food-details">
+                           <label for="food">
+                            <span>Foods :</span> <br>
+                               <select id="food" name="food">
+                                <option value="parotta">Parotta</option>
+                                <option value="briyani">Briyani</option>
+                                <option value="fried rice">Fried Rice</option>
+                                <option value="butterchicken">Butter Chicken</option>
+                                <option value="Tandoori Chicken">Tandoori Chicken</option>
+                              </select>
+                        </label>
+                       </div>
+                       <div class="form-action">
+                           <input type="submit" onclick="onFormSubmit()" value="Submit">
+                           <input type="reset" value="Reset">
+                       </div>
+                    </form>
+                </div>
+            </td>
+            <td>
+                <table class="list" id="storedata" >
+                    <thead>
+                        <th>First Name</th>
+                        <th>Last name</th>
+                        <th>Address</th>
+                        <th>State</th>
+                        <th>Country</th>
+                        <th>Pincode</th>
+                        <th>Gender</th>
+                        <th>Foods</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="form1.js"></script>
+</body>
+</html>
